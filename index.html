@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <meta name="screen-orientation" content="landscape" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <title>Liquid War</title>
+    <script type="module" crossorigin src="/liquid-war/assets/index.978530fa.js"></script>
+    <link rel="stylesheet" href="/liquid-war/assets/index.c1427208.css">
+  </head>
+
+  <body>
+    <main>
+      <div oncontextmenu="return false" id="game" class="hidden">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="start-menu">
+        <h1>Liquid War</h1>
+        <fieldset>
+          <legend>New game</legend>
+          <form id="join-form">
+            <div class="field">
+              <label for="fps">FPS</label>
+              <input id="fps" required value="20" />
+            </div>
+            <div class="field">
+              <label for="liquid">Liquid per player</label>
+              <input id="liquid" required value="100" />
+            </div>
+            <div class="field">
+              <label for="cursor">Cursor speed</label>
+              <input id="cursor" required value="2" />
+            </div>
+            <div class="field">
+              <label for="players">Players</label>
+              <input id="players" required value="2" />
+            </div>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" required value="unknown" />
+            </div>
+            <button>Play</button>
+          </form>
+        </fieldset>
+      </div>
+      <div class="loading-menu hidden">
+        <h2>Waiting for second player</h2>
+      </div>
+    </main>
+    
+  </body>
+</html>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -9" />
+    </filter>
+  </defs>
+</svg>
+<style>
+  #canvas {
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+  }
+</style>
