@@ -13,8 +13,8 @@
 
     <meta name="format-detection" content="telephone=no" />
     <title>Liquid War</title>
-    <script type="module" crossorigin src="/assets/index.fa7ae6f3.js"></script>
-    <link rel="stylesheet" href="/assets/index.c1427208.css">
+    <script type="module" crossorigin src="/assets/index.3c384541.js"></script>
+    <link rel="stylesheet" href="/assets/index.63ede47e.css">
   </head>
 
   <body>
@@ -24,35 +24,35 @@
       </div>
       <div class="start-menu">
         <h1>Liquid War</h1>
-        <fieldset>
-          <legend>New game</legend>
-          <form id="join-form">
+        <form id="join-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" value="unknown" />
+          </div>
+          <button>Play</button>
+          <details open>
+            <summary>Custom game options</summary>
             <div class="field">
-              <label for="fps">FPS</label>
-              <input id="fps" required value="20" />
+              <label for="serverTickRate">Server tick rate</label>
+              <input id="serverTickRate" />
             </div>
             <div class="field">
               <label for="liquid">Liquid per player</label>
-              <input id="liquid" required value="100" />
+              <input id="liquid" />
             </div>
             <div class="field">
               <label for="cursor">Cursor speed</label>
-              <input id="cursor" required value="2" />
+              <input id="cursor" />
             </div>
             <div class="field">
               <label for="players">Players</label>
-              <input id="players" required value="2" />
+              <input id="players" />
             </div>
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" required value="unknown" />
-            </div>
-            <button>Play</button>
-          </form>
-        </fieldset>
+          </details>
+        </form>
       </div>
       <div class="loading-menu hidden">
-        <h2>Waiting for second player</h2>
+        <h2>Waiting for players&hellip;</h2>
       </div>
       <div class="end-menu hidden">
         <h2>Game ended</h2>
