@@ -13,72 +13,12 @@
 
     <meta name="format-detection" content="telephone=no" />
     <title>Liquid War</title>
-    <script type="module" crossorigin src="/assets/index.c1c7e66a.js"></script>
-    <link rel="stylesheet" href="/assets/index.2b01e436.css">
+    <script type="module" crossorigin src="/assets/index.89d7c8be.js"></script>
+    <link rel="stylesheet" href="/assets/index.881b57e3.css">
   </head>
 
   <body>
-    <main>
-      <div oncontextmenu="return false" id="game" class="hidden">
-        <canvas id="canvas"></canvas>
-      </div>
-      <div class="start-menu">
-        <h1>Liquid War</h1>
-        <form id="join-form">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" value="unknown" />
-          </div>
-          <button>Play</button>
-          <details open>
-            <summary>Custom game options</summary>
-            <div class="field">
-              <label for="serverTickRate">Server tick rate</label>
-              <input id="serverTickRate" />
-            </div>
-            <div class="field">
-              <label for="liquid">Liquid per player</label>
-              <input id="liquid" />
-            </div>
-            <div class="field">
-              <label for="cursor">Cursor speed</label>
-              <input id="cursor" />
-            </div>
-            <div class="field">
-              <label for="players">Players</label>
-              <input id="players" />
-            </div>
-          </details>
-        </form>
-      </div>
-      <div class="loading-menu hidden">
-        <h2>Waiting for players&hellip;</h2>
-      </div>
-      <div class="end-menu hidden">
-        <marquee class="title" width="50%">Game ended</marquee>
-        <p class="game-winner"></p>
-        <button id="play-again-btn">Play again</button>
-      </div>
-    </main>
+    <div id="app"></div>
     
   </body>
 </html>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="11" result="blur" />
-      <feColorMatrix
-        in="blur"
-        mode="matrix"
-        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -9"
-      />
-    </filter>
-  </defs>
-</svg>
-<style>
-  #canvas {
-    -webkit-filter: url('#goo');
-    filter: url('#goo');
-  }
-</style>
