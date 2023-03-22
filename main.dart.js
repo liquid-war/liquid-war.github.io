@@ -18143,7 +18143,7 @@ aeL(a,b){$.dV().toString},
 abw(a,b,c){var s=$.d0
 return(s==null?$.d0=B.aq:s).WV(0,b,!1,null,c)},
 alR(a){return},
-af7(){var s,r,q=null,p=$.dV(),o=A.abw(p,new A.F5(A.ak4(A.a0E("ws://localhost:6464"),q)),t.AO),n=t.z,m=J.qS(0,n),l=new A.tH($,!0,!1,new A.hR(A.a([],t.j2),t.Fu),A.x(t.FE,t.sF),t.uU)
+af7(){var s,r,q=null,p=$.dV(),o=A.abw(p,new A.F5(A.ak4(A.a0E("wss://api.teemukoivisto.xyz/lw"),q)),t.AO),n=t.z,m=J.qS(0,n),l=new A.tH($,!0,!1,new A.hR(A.a([],t.j2),t.Fu),A.x(t.FE,t.sF),t.uU)
 l.f$=A.i3(m,!0,n)
 n=J.qS(0,t.p3)
 m=B.vI.Wp(1e8)
