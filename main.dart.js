@@ -52952,16 +52952,16 @@ A.f3.prototype={
 F(){return"GameState."+this.b}}
 A.qs.prototype={
 Ue(a,b){var s,r,q,p,o=this
-if(a===0){s=A.aaZ()
+if(a===3){s=A.aaZ()
 s.na(b,B.bE)
 r=o.ch
 q=t.o7
 r.iI(r,0,J.bi(r.gn(r)),s.a.dV(0,q))
-A.dA("lobby state "+A.h(s.a.dV(0,q)))}else if(a===5){s=A.a7B()
+A.dA("lobby state "+A.h(s.a.dV(0,q)))}else if(a===8){s=A.a7B()
 s.na(b,B.bE)
 if(s.a.ef(1)===o.dx){o.CW=s.a.ru(0)
 o.ax=B.cB
-o.fx.v(0,B.cB)}}else if(a===6){A.dA("game start")
+o.fx.v(0,B.cB)}}else if(a===10){A.dA("game start")
 s=A.aax()
 s.na(b,B.bE)
 o.CW=s.a.ru(0)
@@ -52978,12 +52978,12 @@ p=A.ahp()
 p.a3=s.a.dV(3,t.hy)
 o.fr=p
 o.ax=B.ee
-o.fx.v(0,B.ee)}else if(a===7){A.dA("game end")
+o.fx.v(0,B.ee)}else if(a===12){A.dA("game end")
 r=A.aaw()
 r.na(b,B.bE)
 o.db=r
 o.ax=B.bf
-o.fx.v(0,B.bf)}else if(a===8){s=A.ac9()
+o.fx.v(0,B.bf)}else if(a===11){s=A.ac9()
 s.na(b,B.bE)
 r=o.fr
 if(r!=null)r.JY(s)
