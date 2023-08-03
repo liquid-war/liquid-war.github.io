@@ -72765,7 +72765,7 @@ $1(a){return a.a.hj(0)===this.a.dx},
 $S:410}
 A.pM.prototype={}
 A.MC.prototype={
-a8b(a,b){var s=A.aAc(A.oP("wss://api.teemukoivisto.xyz/lw?jwt="+a.CW),null)
+a8b(a,b){var s=A.aAc(A.oP("wss://api.teemukoivisto.xyz/liquid-battle?jwt="+a.CW),null)
 this.b=s
 s=s.r.b
 s===$&&A.b()
