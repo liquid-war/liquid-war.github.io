@@ -72642,7 +72642,7 @@ wF(){var s=0,r=A.a9(t.z),q,p=this,o,n,m,l,k
 var $async$wF=A.aa(function(a,b){if(a===1)return A.a6(b,r)
 while(true)switch(s){case 0:l=t.N
 s=3
-return A.ak(A.aHL(A.oP("http://localhost:6464/login"),A.aL(["Content-Type","application/json"],l,l)),$async$wF)
+return A.ak(A.aHL(A.oP("https://api.teemukoivisto.xyz/liquid-battle/login"),A.aL(["Content-Type","application/json"],l,l)),$async$wF)
 case 3:k=b
 if(k.b===200){l=B.bv.Nb(0,A.au6(A.at3(k.e).c.a.h(0,"charset")).dN(0,k.w),null)
 o=J.al(l)
@@ -72752,7 +72752,7 @@ $1(a){return a.a.iI(0)===this.a.dx},
 $S:410}
 A.pM.prototype={}
 A.MC.prototype={
-a8b(a,b){var s=A.aAc(A.oP("wss://api.teemukoivisto.xyz/liquid-battle?jwt="+a.CW),null)
+a8b(a,b){var s=A.aAc(A.oP("wss://api.teemukoivisto.xyz/liquid-battle/ws?jwt="+a.CW),null)
 this.b=s
 s=s.r.b
 s===$&&A.b()
